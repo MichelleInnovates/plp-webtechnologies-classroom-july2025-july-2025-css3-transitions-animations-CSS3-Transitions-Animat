@@ -1,0 +1,39 @@
+/* ==============
+   Part 1: CSS3 Animations
+   ============== */
+
+/* Button hover transition */
+.animated-btn {
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background: #4CAF50;
+  color: white;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.animated-btn:hover {
+  background: #45a049;
+  transform: scale(1.1);
+}
+
+/* Box to animate */
+.box {
+  width: 100px;
+  height: 100px;
+  background: royalblue;
+  margin-top: 20px;
+  position: relative;
+}
+
+/* Keyframe animation */
+@keyframes slideAndFade {
+  0% { left: 0; opacity: 1; }
+  50% { left: 200px; opacity: 0.5; }
+  100% { left: 0; opacity: 1; }
+}
+
+.animate {
+  animation: slideAndFade 2s ease-in-out forwards;
+}
